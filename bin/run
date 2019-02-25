@@ -18,3 +18,5 @@ song = Song.new(name: "Nanneddu Meo", album: "Non votare Fantola")
 puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
+
+DB[:conn].execute("SELECT * FROM songs")
